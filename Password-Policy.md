@@ -22,7 +22,7 @@ To interact with the domain’s Active Directory, we need to load the **ActiveDi
 ```powershell
 Import-Module ActiveDirectory
 ```
-
+<img src="20.png" alt="Description of Image" />
 ---
 
 ## Step 3: View the Current Domain Password Policy  
@@ -33,7 +33,7 @@ Get-ADDefaultDomainPasswordPolicy
 ```
 
 This will display the existing password policy, which will serve as the baseline for the changes we want to make.
-
+<img src="21.png" alt="Description of Image" />
 ---
 
 ## Step 4: Implement the New Password and Lockout Policies  
@@ -49,6 +49,7 @@ Based on the results of our security assessments (password spraying, dictionary 
 | MinPasswordLength           | 12            |
 
 Now, enter the following PowerShell commands to enforce these changes:
+<img src="22.png" alt="Description of Image" />
 
 ```powershell
 Set-ADDefaultDomainPasswordPolicy -Identity structureality -LockoutObservationWindow 00:15:00

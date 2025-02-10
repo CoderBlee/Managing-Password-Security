@@ -12,7 +12,7 @@ Before initiating the brute force attack, it’s important to clear the history 
 ```bash
 rm ~/.john/john.pot
 ```
-
+<img src="13.png" alt="Description of Image" />
 ---
 
 ## Step 2: Initiate Brute Force Attack  
@@ -34,7 +34,7 @@ john --format=NT --incremental ms10-hashes.txt
 
 ## Step 3: View Cracked Passwords  
 Once the attack has run for a sufficient amount of time, display the cracked passwords with the following command:  
-
+<img src="14.png" alt="Description of Image" />
 ```bash
 john --show --format=NT ms10-hashes.txt
 ```
@@ -47,6 +47,7 @@ After running this command, you should see the compromised passwords, as well as
 
 ## Step 4: Save Cracked Passwords to a File  
 You can save the cracked passwords to a text file for later reference:  
+<img src="17.png" alt="Description of Image" />
 
 ```bash
 john --show --format=NT ms10-hashes.txt > brute-cracked.txt
@@ -57,7 +58,7 @@ To view the saved file, use the `less` command:
 ```bash
 less brute-cracked.txt
 ```
-
+<img src="15.png" alt="Description of Image" />
 > **Navigation tips:**  
 > - Press **SPACEBAR** to move to the next page.  
 > - Press **b** to go back to the previous page.  
@@ -77,6 +78,7 @@ john --show=left --format=NT ms10-hashes.txt
 
 ## Step 6: Limit the Attack to Shorter Passwords  
 Now, let's limit the brute force attack to passwords that are 6 characters or less. This will reduce the range of possible combinations and speed up the process.  
+<img src="18.png" alt="Description of Image" />
 
 ```bash
 john --format=NT --incremental --max-length=6 ms10-hashes.txt
@@ -87,7 +89,8 @@ Press **SPACEBAR** to view the progress. The attack will likely show an **ETA** 
 ---
 
 ## Step 7: Run the Attack for 7-Character Passwords  
-Next, let's increase the limit to 7 characters. This will significantly expand the password space, and the attack will take much longer.  
+Next, let's increase the limit to 7 characters. This will significantly expand the password space, and the attack will take much longer. 
+<img src="19.png" alt="Description of Image" /> 
 
 ```bash
 john --format=NT --incremental --max-length=7 ms10-hashes.txt

@@ -12,7 +12,7 @@ Before starting the dictionary attack, let’s view the collected user account d
 ```bash
 cat ms10-hashes.txt
 ```
-
+<img src="8.png" alt="Description of Image" />
 > **Note:** The account with a **RID of 500** is the **default administrator account** (`admin`), and the account with **RID 501** is the **Guest account** (often disabled with a blank password by default).
 
 ---
@@ -23,7 +23,7 @@ Now let’s list all available dictionary files on your system. Enter the follow
 ```bash
 ls -lSr /usr/share/seclists/Passwords
 ```
-
+<img src="9.png" alt="Description of Image" />
 This will show the directory contents sorted by size, from smallest to largest. The `xato-net-10-million-passwords.txt` file is one of the largest and most commonly used for dictionary attacks. This file contains a list of common passwords and is primarily English-based.
 
 ---
@@ -40,7 +40,7 @@ john --format=NT --wordlist=/usr/share/seclists/Passwords/xato-net-10-million-pa
 - `--wordlist=...` specifies the dictionary file to use (the list of passwords to try).  
 
 This attack should take just a few seconds, even with the large 10 million password dictionary. JtR will hash each password in the dictionary and compare the results with the target hashes to identify any matches.
-
+<img src="10.png" alt="Description of Image" />
 ---
 
 ## Step 4: Review Cracked Passwords  
@@ -74,7 +74,7 @@ less dict-cracked.txt
 - Press **b** to go back a page.  
 - Use the **arrow keys** to scroll line by line.  
 - Type **q** to exit the viewer.
-
+<img src="11.png" alt="Description of Image" />
 ---
 
 ## Step 6: Display Accounts That Were Not Cracked  

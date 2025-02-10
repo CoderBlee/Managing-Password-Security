@@ -10,6 +10,7 @@ To attach a network share, start by creating a mount point:
 ```bash
 mkdir /mnt/HR
 ```
+<img src="1.png" alt="Description of Image" />
 
 A mount point is necessary for accessing a network share once valid credentials are discovered.  
 
@@ -27,6 +28,7 @@ cat users.txt
 > ls -a
 > ```  
 > The file should then appear in the directory.
+<img src="2.png" alt="Description of Image" />
 
 ---
 
@@ -44,7 +46,7 @@ Try mounting the network share using the following command:
 ```bash
 mount //10.1.16.2/HR /mnt/HR -o username=pat
 ```
-
+<img src="3.png" alt="Description of Image" />
 When prompted for a password, enter: `abc123`  
 
 Result: **Mount error** – This password is incorrect.
@@ -72,7 +74,8 @@ echo 'Pa$$w0rd' >> pass.txt
 cat pass.txt  
 ```
 
-> **Important:** Ensure the passwords are spelled correctly, especially `Pa$$w0rd`. Use single quotes to avoid issues.  
+> **Important:** Ensure the passwords are spelled correctly, especially `Pa$$w0rd`. Use single quotes to avoid issues.
+  <img src="4.png" alt="Description of Image" />
 
 ### Understanding the Commands:  
 - `>` creates a new file and writes to it.  
@@ -86,7 +89,7 @@ Use the Hydra wizard to perform a password spraying attack:
 ```bash
 hydra-wizard
 ```
-
+<img src="5.png" alt="Description of Image" />
 ### Hydra Wizard Responses:  
 
 | **Prompt**          | **Response**   |
@@ -101,7 +104,7 @@ hydra-wizard
 | Run command          | Y              |
 
 Hydra will now attempt each password for every user listed in `users.txt` against the MS10 share.  
-
+<img src="6.png" alt="Description of Image" />
 ---
 
 ## Step 6: Verify Credentials  
@@ -125,7 +128,7 @@ To unmount the share, use:
 ```bash
 umount /mnt/HR
 ```
-
+<img src="7.png" alt="Description of Image" />
 ---
 
 ## Conclusion: Best Practices for Password Security  
