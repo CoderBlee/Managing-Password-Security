@@ -41,6 +41,7 @@ john --format=NT --wordlist=/usr/share/seclists/Passwords/xato-net-10-million-pa
 - `--wordlist=...` specifies the dictionary file to use (the list of passwords to try).  
 
 This attack should take just a few seconds, even with the large 10 million password dictionary. JtR will hash each password in the dictionary and compare the results with the target hashes to identify any matches.
+
 <img src="10.png" alt="Description of Image" />
 ---
 
