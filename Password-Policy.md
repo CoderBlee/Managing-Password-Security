@@ -33,6 +33,7 @@ Get-ADDefaultDomainPasswordPolicy
 ```
 
 This will display the existing password policy, which will serve as the baseline for the changes we want to make.
+
 <img src="21.png" alt="Description of Image" />
 ---
 
