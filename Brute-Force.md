@@ -59,7 +59,8 @@ To view the saved file, use the `less` command:
 less brute-cracked.txt
 ```
 <img src="15.png" alt="Description of Image" />
-> **Navigation tips:**  
+
+ **Navigation tips:**  
 > - Press **SPACEBAR** to move to the next page.  
 > - Press **b** to go back to the previous page.  
 > - Use the **arrow keys** to scroll line by line.  
