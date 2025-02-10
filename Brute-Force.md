@@ -91,6 +91,7 @@ Press **SPACEBAR** to view the progress. The attack will likely show an **ETA** 
 
 ## Step 7: Run the Attack for 7-Character Passwords  
 Next, let's increase the limit to 7 characters. This will significantly expand the password space, and the attack will take much longer. 
+
 <img src="19.png" alt="Description of Image" /> 
 
 ```bash
