@@ -13,7 +13,8 @@ Before starting the dictionary attack, let’s view the collected user account d
 cat ms10-hashes.txt
 ```
 <img src="8.png" alt="Description of Image" />
-> **Note:** The account with a **RID of 500** is the **default administrator account** (`admin`), and the account with **RID 501** is the **Guest account** (often disabled with a blank password by default).
+
+ **Note:** The account with a **RID of 500** is the **default administrator account** (`admin`), and the account with **RID 501** is the **Guest account** (often disabled with a blank password by default).
 
 ---
 

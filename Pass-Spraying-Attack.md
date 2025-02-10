@@ -90,6 +90,7 @@ Use the Hydra wizard to perform a password spraying attack:
 hydra-wizard
 ```
 <img src="5.png" alt="Description of Image" />
+
 ### Hydra Wizard Responses:  
 
 | **Prompt**          | **Response**   |
